@@ -35,7 +35,7 @@ WeatherForm.addEventListener('submit', (e) =>{
             else if (data.description=='scattered clouds' || data.description=='overcast clouds' || data.description=='few clouds' || data.description=='clouds' || data.description=='broken clouds'){
                 document.getElementById('img-icon').src='/img/clouds.png'
             }
-            else if(data.description=='light rain' || data.description=='heavy rain' || data.description=='rain'){
+            else if(data.description=='light rain' || data.description=='heavy rain' || data.description=='shower rain' ||data.description=='rain'){
                 document.getElementById('img-icon').src='/img/rain.png'
             }
             else{
