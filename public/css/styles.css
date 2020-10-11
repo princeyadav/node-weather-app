@@ -11,13 +11,22 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
     padding: 15px;
+    
     margin: 0 auto;
     border: 2px solid gray;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     box-shadow: 2px 5px 10px #888888;
+    color: whitesmoke;
+    
 
+}
+.img{
+    
+    background-image: url('/img/img-bg.jpg');
+    background-size: cover;
+          
 }
 .content-head{
     margin-top: 10px;
@@ -42,7 +51,7 @@ body{
 }
 footer{
     
-    color:#888888;
+    color:rgb(22, 22, 22);
     border-top: 1px solid #eeeeee;
     
     padding: 16px 0;
@@ -51,6 +60,7 @@ footer{
 h1{
     font-size: 60px;
     margin: 10px 0px 10px 0px;
+    color: whitesmoke;
 
 }
 .icon{
@@ -69,7 +79,7 @@ button{
     border: 1px solid #888888;
     background: #888888;
     padding: 8px;
-    color: #cccccc;
+    color: #ffffff;
 }
 .location{
     font-weight: bolder;

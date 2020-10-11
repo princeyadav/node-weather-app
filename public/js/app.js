@@ -29,17 +29,20 @@ WeatherForm.addEventListener('submit', (e) =>{
             
             messageOne.textContent=data.location
             messageTwo.textContent=forecast
-            if(data.description=='clear sky' || data.description=='sunny' ){
+            if(data.weatherMain=='Clear'){
                 document.getElementById('img-icon').src='/img/sun-moon.png'
             }
-            else if (data.description=='scattered clouds' || data.description=='overcast clouds' || data.description=='few clouds' || data.description=='clouds' || data.description=='broken clouds'){
+            else if (data.weatherMain=='Clouds'){
                 document.getElementById('img-icon').src='/img/clouds.png'
             }
-            else if(data.description=='light rain' || data.description=='heavy rain' || data.description=='shower rain' ||data.description=='rain'){
+            else if(data.weatherMain=='Rain' || data.weatherMain=='Drizzle'){
                 document.getElementById('img-icon').src='/img/rain.png'
             }
-            else{
+            else if(data.weatherMain=='Haze'){
                 document.getElementById('img-icon').src='/img/haze.png'
+            }
+            else{
+                document.getElementById('img-icon').src='/img/weather.png'
             }
         }
     })      

@@ -13,6 +13,7 @@ const forecast = (lati, long, callback) =>{
         else{
             
             callback(undefined,{temp: newdata.main.temp,
+            weatherMain:newdata.weather[0].main,  
             description:newdata.weather[0].description,
             name:newdata.name})
         }

@@ -54,6 +54,7 @@ app.get('/weather',(req,res)=>{
             }
             res.send({
                 temp:forecastData.temp,
+                weatherMain:forecastData.weatherMain,
                 description:forecastData.description,
                 name:forecastData.name,
                 location,
